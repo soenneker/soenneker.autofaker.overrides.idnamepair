@@ -42,7 +42,7 @@
     </ItemGroup>
     
     <ItemGroup>
-      <PackageReference Include="Soenneker.Dtos.IdNamePair" Version="2.1.341" />
+      <PackageReference Include="Soenneker.Dtos.IdNamePair" Version="2.1.342" />
       <PackageReference Include="Soenneker.Utils.AutoBogus" Version="2.1.375" />
     </ItemGroup>
 </Project>
