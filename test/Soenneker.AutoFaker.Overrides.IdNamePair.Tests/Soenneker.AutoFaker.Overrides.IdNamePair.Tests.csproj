@@ -27,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.AutoFaker.Overrides.IdNamePair.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.AutoFaker.Overrides.IdNamePair\Soenneker.AutoFaker.Overrides.IdNamePair.csproj" />
     </ItemGroup>
 
     <ItemGroup>
