@@ -1,16 +1,15 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.AutoFaker.Overrides.IdNamePair.Tests;
 
-[Collection("Collection")]
-public class IdNamePairOverrideTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class IdNamePairOverrideTests : HostedUnitTest
 {
-    public IdNamePairOverrideTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public IdNamePairOverrideTests(Host host) : base(host)
     {
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
