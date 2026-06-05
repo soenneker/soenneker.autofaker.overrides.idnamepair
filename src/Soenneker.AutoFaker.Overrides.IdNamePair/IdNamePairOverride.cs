@@ -8,6 +8,10 @@ namespace Soenneker.AutoFaker.Overrides.IdNamePair;
 /// </summary>
 public class IdNamePairOverride : AutoFakerOverride<Dtos.IdNamePair.IdNamePair>
 {
+    /// <summary>
+    /// Executes the generate operation.
+    /// </summary>
+    /// <param name="context">The context.</param>
     public override void Generate(AutoFakerOverrideContext context)
     {
         var target = (context.Instance as Dtos.IdNamePair.IdNamePair)!;
