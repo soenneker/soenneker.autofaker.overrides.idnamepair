@@ -5,14 +5,25 @@
 
 # Soenneker.AutoFaker.Overrides.IdNamePair
 
-An AutoFaker (AutoBogus) override for the DTO IdNamePair.
+An AutoFaker override for generating useful `IdNamePair` fixtures.
 
-## Install
+## Installation
 
 ```bash
 dotnet add package Soenneker.AutoFaker.Overrides.IdNamePair
 ```
 
-## What you get
+## Usage
 
-- `IdNamePairOverride` — An AutoFaker (AutoBogus) override for the DTO IdNamePair.
+```csharp
+using Soenneker.AutoFaker.Overrides.IdNamePair;
+using Soenneker.Dtos.IdNamePair;
+using Soenneker.Utils.AutoBogus;
+
+var autoFaker = new AutoFaker();
+autoFaker.Config.Overrides = [new IdNamePairOverride()];
+
+IdNamePair pair = autoFaker.Generate<IdNamePair>();
+```
+
+`Id` is a GUID string and `Name` is a generated company name. The override matches `IdNamePair` itself; it does not opt derived types into the same behavior.
